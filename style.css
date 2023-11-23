@@ -1,0 +1,659 @@
+body {
+    color: white;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    z-index: -20;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:#091634;
+    overflow: hidden;
+}
+
+.background span {
+    z-index: -15;
+    width: 2vmin;
+    height: 2vmin;
+    border-radius: 2vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 44;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    z-index: -15;
+    color: #ffffff;
+    top: 90%;
+    left: 97%;
+    animation-duration: 45s;
+    animation-delay: -6s;
+    transform-origin: 14vw -13vh;
+    box-shadow: 4vmin 0 1.4314489451797912vmin currentColor;
+}
+.background span:nth-child(1) {
+    z-index: -15;
+    color: #ffffff;
+    top: 76%;
+    left: 9%;
+    animation-duration: 19s;
+    animation-delay: -17s;
+    transform-origin: -3vw 9vh;
+    box-shadow: -4vmin 0 1.2089322106476856vmin currentColor;
+}
+.background span:nth-child(2) {
+    z-index: -15;
+    color: #ffffff;
+    top: 47%;
+    left: 38%;
+    animation-duration: 61s;
+    animation-delay: -13s;
+    transform-origin: 1vw -2vh;
+    box-shadow: -4vmin 0 0.9322423481192603vmin currentColor;
+}
+.background span:nth-child(3) {
+    z-index: -15;
+    color: #ffffff;
+    top: 50%;
+    left: 73%;
+    animation-duration: 17s;
+    animation-delay: -20s;
+    transform-origin: 0vw 7vh;
+    box-shadow: 4vmin 0 0.6057988131831824vmin currentColor;
+}
+.background span:nth-child(4) {
+    z-index: -15;
+    color: #ffffff;
+    top: 75%;
+    left: 84%;
+    animation-duration: 44s;
+    animation-delay: -25s;
+    transform-origin: -20vw -23vh;
+    box-shadow: -4vmin 0 1.3155900009774935vmin currentColor;
+}
+.background span:nth-child(5) {
+    z-index: -15;
+    color: #ffffff;
+    top: 72%;
+    left: 14%;
+    animation-duration: 12s;
+    animation-delay: -48s;
+    transform-origin: -18vw -13vh;
+    box-shadow: -4vmin 0 1.2255771907172879vmin currentColor;
+}
+.background span:nth-child(6) {
+    z-index: -15;
+    color: #ffffff;
+    top: 77%;
+    left: 2%;
+    animation-duration: 50s;
+    animation-delay: -48s;
+    transform-origin: -23vw 21vh;
+    box-shadow: 4vmin 0 0.8263818856913292vmin currentColor;
+}
+.background span:nth-child(7) {
+    z-index: -15;
+    color: #ffffff;
+    top: 57%;
+    left: 71%;
+    animation-duration: 30s;
+    animation-delay: -36s;
+    transform-origin: 16vw -14vh;
+    box-shadow: -4vmin 0 1.146871955870046vmin currentColor;
+}
+.background span:nth-child(8) {
+    z-index: -15;
+    color: #ffffff;
+    top: 66%;
+    left: 59%;
+    animation-duration: 62s;
+    animation-delay: -49s;
+    transform-origin: 15vw -18vh;
+    box-shadow: 4vmin 0 1.4766993734997302vmin currentColor;
+}
+.background span:nth-child(9) {
+    z-index: -15;
+    color: #ffffff;
+    top: 95%;
+    left: 86%;
+    animation-duration: 37s;
+    animation-delay: -2s;
+    transform-origin: -6vw 18vh;
+    box-shadow: -4vmin 0 1.3973141147725174vmin currentColor;
+}
+.background span:nth-child(10) {
+    z-index: -15;
+    color: #ffffff;
+    top: 44%;
+    left: 88%;
+    animation-duration: 11s;
+    animation-delay: -53s;
+    transform-origin: 7vw -12vh;
+    box-shadow: 4vmin 0 0.6097569458290655vmin currentColor;
+}
+.background span:nth-child(11) {
+    z-index: -15;
+    color: #ffffff;
+    top: 19%;
+    left: 94%;
+    animation-duration: 57s;
+    animation-delay: -22s;
+    transform-origin: 0vw 14vh;
+    box-shadow: 4vmin 0 0.6627969235904085vmin currentColor;
+}
+.background span:nth-child(12) {
+    z-index: -15;
+    color: #ffffff;
+    top: 16%;
+    left: 78%;
+    animation-duration: 28s;
+    animation-delay: -20s;
+    transform-origin: -22vw -8vh;
+    box-shadow: -4vmin 0 0.9900933659447755vmin currentColor;
+}
+.background span:nth-child(13) {
+    z-index: -15;
+    color: #ffffff;
+    top: 28%;
+    left: 29%;
+    animation-duration: 53s;
+    animation-delay: -13s;
+    transform-origin: -9vw 7vh;
+    box-shadow: 4vmin 0 0.7772613354990396vmin currentColor;
+}
+.background span:nth-child(14) {
+    z-index: -15;
+    color: #ffffff;
+    top: 46%;
+    left: 41%;
+    animation-duration: 24s;
+    animation-delay: -19s;
+    transform-origin: -14vw -11vh;
+    box-shadow: 4vmin 0 1.4112312318370592vmin currentColor;
+}
+.background span:nth-child(15) {
+    z-index: -15;
+    color: #ffffff;
+    top: 46%;
+    left: 80%;
+    animation-duration: 11s;
+    animation-delay: -55s;
+    transform-origin: 3vw -14vh;
+    box-shadow: 4vmin 0 0.5043108145733322vmin currentColor;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 45px;
+    font-family:'DM Serif Display', sans-serif;
+    position: fixed;
+    top: 100px;
+    left: 60px;
+    margin: 100px;
+}
+
+.function{
+    font-size: 17px;
+    font-family:'DM Serif Display', sans-serif;
+    position: fixed;
+    top: 160px;
+    left: 60px;
+    margin: 100px;
+}
+.Git-logo{
+    width: 40px; /* Ajuste conforme necessário */
+    height: auto;
+    position: fixed;
+    bottom: 20px; /* Ajuste conforme necessário para a distância do fundo */
+    left: 260px; /* Ajuste conforme necessário para a posição horizontal */
+    z-index: 1000; /* Certifique-se de que este valor seja maior do que outros elementos na página */
+}
+.Insta-logo{
+    width: 40px; /* Ajuste conforme necessário */
+    height: auto;
+    position: fixed;
+    bottom: 20px; /* Ajuste conforme necessário para a distância do fundo */
+    left: 400px; /* Ajuste conforme necessário para a posição horizontal */
+    z-index: 1000; /* Certifique-se de que este valor seja maior do que outros elementos na página */
+}
+.Linke-logo{
+    width: 40px; /* Ajuste conforme necessário */
+    height: auto;
+    position: fixed;
+    bottom: 20px; /* Ajuste conforme necessário para a distância do fundo */
+    left: 330px; /* Ajuste conforme necessário para a posição horizontal */
+    z-index: 1000; /* Certifique-se de que este valor seja maior do que outros elementos na página */
+}
+
+.introduction  {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 19px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    width: 40%; /* Defina a largura da introdução */
+    position: absolute;
+    top: 190px; /* Ajuste a distância do topo conforme necessário */
+    right: 70px;
+    margin-right: 120px; /* Ajuste a margem direita conforme necessário */
+    padding-left: 200px; /* Ajuste este valor para reduzir o espaço à esquerda */
+}
+
+.intText2{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 19px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    width: 40%; /* Defina a largura da introdução */
+    position: absolute;
+    top: 400px; /* Ajuste a distância do topo conforme necessário */
+    right: 70px;
+    margin-right: 120px; /* Ajuste a margem direita conforme necessário */
+    padding-left: 200px; /* Ajuste a margem conforme necessário para nivelar com o logo */
+}
+.imagemZaffari{
+    width: 100%;
+    height: auto;
+    max-width: 80px; /* Ajuste conforme necessário */
+    position: absolute;
+    top:710px; /* Ajuste conforme necessário para a posição vertical */
+    left: 720px; /* Ajuste conforme necessário para a posição horizontal */
+}
+
+.DataExpe{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    width: 40%; /* Defina a largura da introdução */
+    position: absolute;
+    top: 660px; /* Ajuste a distância do topo conforme necessário */
+    right: 60px;
+    margin-right: 105px; /* Ajuste a margem direita conforme necessário */
+    padding-left: 200px; /* Ajuste a margem conforme necessário para nivelar com o logo */
+}
+.menuexperience{
+    padding: 20px; /* Adiciona algum preenchimento interno para o conteúdo */
+    border-radius: 10px; /* Adiciona bordas arredondadas (ajuste conforme necessário) */
+    margin-right: 120px; /* Ajuste a margem direita conforme necessário */
+    padding-left: 200px;
+}
+
+.Experience {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    width: 30%; /* Defina a largura da introdução */
+    position: absolute;
+    top: 660px; /* Ajuste a distância do topo conforme necessário */
+    right: 70px;
+    margin-right: 120px; /* Ajuste a margem direita conforme necessário */
+    padding-left: 200px; /* Ajuste a margem conforme necessário para nivelar com o logo */
+}
+.imagem1{
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Ajuste conforme necessário */
+    position: absolute;
+    top: 900px; /* Ajuste conforme necessário para a posição vertical */
+    left: 830px; /* Ajuste conforme necessário para a posição horizontal */
+}
+
+.skills{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    margin: auto; /* Adiciona margem automática para centralizar horizontalmente */
+    position: relative; /* Permite centralizar com base no contorno */
+    top: 990px; /* Ajuste a distância do topo conforme necessário */ 
+    left: 15%; /* Move o elemento para a direita pela metade da largura */
+} 
+.imagem2{
+    width: 100%;
+    height: auto;
+    max-width: 100px; /* Ajuste conforme necessário */
+    position: absolute;
+    top: 1300px; /* Ajuste conforme necessário para a posição vertical */
+    left: 900px; /* Ajuste conforme necessário para a posição horizontal */
+}
+.skills2{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    margin: auto; /* Adiciona margem automática para centralizar horizontalmente */
+    position: relative; /* Permite centralizar com base no contorno */
+    top: 1240px; /* Ajuste a distância do topo conforme necessário */ 
+    left: 15%; /* Move o elemento para a direita pela metade da largura */
+}
+.imagem3{
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Ajuste conforme necessário */
+    position: absolute;
+    top: 1700px; /* Ajuste conforme necessário para a posição vertical */
+    left: 895px; /* Ajuste conforme necessário para a posição horizontal */
+}
+
+.skills3{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    margin: auto; /* Adiciona margem automática para centralizar horizontalmente */
+    position: relative; /* Permite centralizar com base no contorno */
+    top: 1480px; /* Ajuste a distância do topo conforme necessário */ 
+    left: 15%; /* Move o elemento para a direita pela metade da largura */
+
+}
+.imagem4{
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Ajuste conforme necessário */
+    position: absolute;
+    top: 2100px; /* Ajuste conforme necessário para a posição vertical */
+    left: 900px; /* Ajuste conforme necessário para a posição horizontal */
+}
+.skills4{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    margin: auto; /* Adiciona margem automática para centralizar horizontalmente */
+    position: relative; /* Permite centralizar com base no contorno */
+    top: 1700px; /* Ajuste a distância do topo conforme necessário */ 
+    left: 15%; /* Move o elemento para a direita pela metade da largura */
+
+}
+.Titprojetos{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    width: 40%; /* Defina a largura da introdução */
+    position: absolute;
+    top:2510px; /* Ajuste a distância do topo conforme necessário */
+    right: 40px;
+    margin-right: 120px; /* Ajuste a margem direita conforme necessário */
+    padding-left: 200px; /* Ajuste a margem conforme necessário para nivelar com o logo */
+}
+.brittany {
+    color:white; 
+    font-family: 'Hind Siliguri', sans-serif;
+    text-decoration: none;
+    
+}
+.project{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+    width: 40%; /* Defina a largura da introdução */
+    position: absolute;
+    top: 2571px; /* Ajuste a distância do topo conforme necessário */
+    right: 40px;
+    margin-right: 120px; /* Ajuste a margem direita conforme necessário */
+    padding-left: 200px; /* Ajuste este valor para reduzir o espaço à esquerda */
+}
+.menu {
+    position: fixed;
+    top: 60px;
+    left: -100px;
+    margin: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu li {
+   
+  margin-bottom: 10px; /* Adicione margem inferior entre os itens */
+  cursor: pointer;
+  position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.menu li {
+    font-family: 'Hind Siliguri', sans-serif;
+    margin-right: 30px; /* Ajuste o valor conforme necessário para o espaçamento desejado */
+    list-style: none; /* Remove as bolinhas de lista */
+    position: relative; /* Permite posicionar o pseudo-elemento em relação ao item */
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.menu li::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Posiciona a linha no meio do item */
+    left: -65%; /* Coloca a linha à direita do item */
+    width: 0; /* Inicialmente sem largura */
+    height: 2px; /* Altura da linha */
+    background-color: white; /* Cor da linha */
+    transform: translateY(-50%); /* Ajusta a posição vertical da linha */
+    transition: width 0.3s ease-in-out; /* Adiciona uma transição suave para a propriedade width */
+}
+
+.menu li:hover::before,
+.menuContainer:hover .menuLine {
+  width: 50px;
+}
+.Experience:hover::after,
+.skills:hover::after,
+.skills2:hover::after, 
+.skills3:hover::after,
+.skills4:hover::after{
+    z-index: 20;
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(111, 111, 112, 0.226); /* Cor de fundo desejada */
+    z-index: -1; /* Garante que o pseudo-elemento esteja atrás do texto */
+}
+
+@media screen and (max-width: 768px) {
+
+        .Git-logo,
+        .Insta-logo,
+        .Linke-logo {
+            width: 50px; /* Ajuste conforme necessário */
+            height: auto;
+            position: relative;
+            top: 20px; /* Ajuste conforme necessário para a distância do topo */
+            left: 20px; /* Ajuste conforme necessário para a posição horizontal */
+            z-index: 1000; /* Certifique-se de que este valor seja maior do que outros elementos na página */
+        }
+
+        .menu {
+            display: none;
+            }
+
+        .logo {
+            position: relative;
+            top: 30px; /* Ajuste a distância do topo conforme necessário */
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+        }
+    
+        .function {
+            position: relative;
+            top: 10px;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+            top: 20px; /* Ajuste a distância do topo conforme necessário */
+        }
+        .introduction{
+            position: relative;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+            top: 20px; /* Ajuste a distância do topo conforme necessário */
+        }
+        .intText2{
+            position: relative;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+            top: 20px; /* Ajuste a distância do topo conforme necessário */
+        }
+        .skills{
+            position: relative;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+            top: 20px; /* Ajuste a distância do topo conforme necessário */
+        }
+        .skills2{
+            position: relative;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+            top: 20px; /* Ajuste a distância do topo conforme necessário */
+        }
+        .skills3{
+            position: relative;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+            top: 20px; /* Ajuste a distância do topo conforme necessário */
+        }
+        .skills4{
+            position: relative;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+            top: 20px; /* Ajuste a distância do topo conforme necessário */
+        }
+        .Titprojetos{
+            position: relative;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+            top: 20px; /* Ajuste a distância do topo conforme necessário */
+        }
+        .project {
+            position: relative;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+            top: 20px; /* Ajuste a distância do topo conforme necessário */
+        }
+        .DataExpe{
+            top: 70px;
+            width: 80%; /* Ajuste a largura conforme necessário */
+            margin: auto; /* Adiciona margem automática para centralizar horizontalmente */
+            left: 60%; /* Move o elemento para a direita pela metade da largura */
+            position: relative;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: auto;
+            left: 10%;
+        }
+        .Experience{
+            top: 70px;
+            width: 80%; /* Ajuste a largura conforme necessário */
+            margin: auto; /* Adiciona margem automática para centralizar horizontalmente */
+            left: 60%; /* Move o elemento para a direita pela metade da largura */
+            position: relative;
+            width: 80%;
+            padding-left: 20px;
+            margin-right: auto;
+            right: 20px;
+            left: 10%; /* Ajuste conforme necessário para centralizar horizontalmente */
+        }
+    
+        .imagem1,
+        .imagem2,
+        .imagem3,
+        .imagem4 {
+            width: 30%; /* Ajuste a largura conforme necessário, pode variar conforme seu design */
+            height: auto;
+            max-width: 100%; /* Certifique-se de que a imagem não ultrapasse a largura do contêiner pai */
+            position: relative;
+            top: 20px; /* Ajuste a distância do topo conforme necessário */
+            left: auto; /* Certifique-se de que a posição à esquerda esteja desativada */
+            margin: 0 auto; /* Define margens superior e inferior como 0 e centraliza horizontalmente */
+        }
+        .Experience,
+        .skills,
+        .skills2,
+        .skills3,
+        .skills4 {
+            width: 80%; /* Ajuste a largura conforme necessário */
+            margin: auto; /* Adiciona margem automática para centralizar horizontalmente */
+            left: 10%; /* Move o elemento para a direita pela metade da largura */
+        }
+    
+}
